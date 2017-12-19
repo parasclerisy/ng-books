@@ -35,6 +35,7 @@ button {
     border: 1px solid #024854;
     background: #177f92;
     color: #fff;
+    cursor: pointer;
 }
 .responstable {
     margin: 1em 0;
@@ -86,7 +87,7 @@ button {
 }
 .responstable td:first-child {
     display: table-cell;
-    text-align: center;
+    text-align: right;
     border-right: 1px solid #d9e4e6;
 }
 @media (min-width: 480px) {
@@ -119,4 +120,34 @@ h1 {
 }
 h1 span {
     color: #167f92;
+}
+.sub-head {
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin-bottom: 15px;
+}
+.wrapper1 {
+    max-width: 780px;
+}
+.table-wrap td {
+    padding: 10px 15px;
+}
+.table-wrap td:first-child {
+    width: 200px;
+    text-align: left !important;
+}
+.book-dtl-btn {
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+.book-dtl-btn button {
+    width: auto;
+    float: none;
+    display: inline-block;
+}
+.colon-cls {
+    float: right;
+    padding: 0px 15px 0px 0px;
 }

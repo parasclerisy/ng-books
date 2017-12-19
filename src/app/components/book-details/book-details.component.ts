@@ -14,6 +14,7 @@ import { EventService } from "../../services/event.service";
 export class BookDetailsComponent implements OnInit {
   public id: number;
   public book: Book;
+  public msg: String = "";
 
   constructor(
     private bookService: BookService,
@@ -46,10 +47,14 @@ export class BookDetailsComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      if (result)
-      this.book = result;
-      this.book.id = this.id;
-      this.eventService.broadcast("edit", this.book);
+      if (result) {
+        this.book = result;
+        this.book.id = this.id;
+        this.msg = "Record updated successfully.";
+        this.eventService.broadcast("edit", this.book);
+      } else {
+        this.msg = "";
+      }
     });
   }
 

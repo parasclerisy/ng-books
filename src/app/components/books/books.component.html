@@ -1,19 +1,19 @@
 <div class="wrapper">
   <div class="heading-main">
-    Test task
+    Book Store
   </div>
   <table class="responstable" cellpadding="0" cellspacing="0">
     <tr>
-      <th data-th="Driver details"><span>Title</span></th>
+      <th data-th="Driver details"><span>Name</span></th>
       <th>Author</th>
-      <th>Website</th>
-      <th>Details</th>
+      <th>Date of Publication</th>
+      <th>Action</th>
     </tr>
     <tr *ngFor="let book of books | paginate: { itemsPerPage: 5, currentPage: page }  | orderBy: 'title'">
-      <td>{{book.title}}</td>
+      <td>{{book.name}}</td>
       <td>{{book.author}}</td>
-      <td>{{book.website}}</td>
-      <td><button (click)="goToBookDetail(book.id)">Show</button></td>
+      <td>{{book.published | date: 'mediumDate'}}</td>
+      <td><button (click)="goToBookDetail(book.id)">Details</button></td>
     </tr>
     <tr>
       <td colspan="4">

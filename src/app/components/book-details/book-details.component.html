@@ -1,47 +1,34 @@
-<div class="wrapper">
+<div class="wrapper wrapper1">
   <div class="heading-main">
-    Book Detail
+    Book Details
   </div>
-  <table class="responstable bookdetail" cellpadding="0" cellspacing="0">
+  <div class="sub-head">{{msg}}</div>
+  <table class="responstable bookdetail table-wrap" cellpadding="0" cellspacing="0">
     <tr>
-      <td data-th="Driver details">ISBN<span></span></td>
-      <td>{{book.isbn}}</td>
+      <td>
+        <h3>Name <span class="colon-cls">:</span> </h3>
+      </td>
+      <td>{{book.name}}</td>
     </tr>
     <tr>
-      <td><span>Title</span></td>
-      <td>{{book.title}}</td>
-    </tr>
-    <tr>
-      <td><span>Subtitle</span></td>
-      <td>{{book.subtitle}}</td>
-    </tr>
-    <tr>
-      <td><span>Author</span></td>
+      <td>
+        <h3>Authors <span class="colon-cls">:</span> </h3>
+      </td>
       <td>{{book.author}}</td>
     </tr>
     <tr>
-      <td><span>Published</span></td>
-      <td>{{book.published | date: 'dd/MM/yyyy'}}</td>
+      <td>
+        <h3>Date of Publication <span class="colon-cls">:</span> </h3>
+      </td>
+      <td>{{book.published | date : 'mediumDate'}}</td>
     </tr>
     <tr>
-      <td><span>Publisher</span></td>
-      <td>{{book.publisher}}</td>
-    </tr>
-    <tr>
-      <td><span>Pages</span></td>
+      <td>
+        <h3>Number of Pages <span class="colon-cls">:</span> </h3>
+      </td>
       <td>{{book.pages}}</td>
     </tr>
-    <tr>
-      <td><span>Description</span></td>
-      <td>{{book.description}}</td>
-    </tr>
-    <tr>
-      <td><span>Website</span></td>
-      <td>{{book.website}}</td>
-    </tr>
-    <tr>
-      <td><button (click)="goBack(book)">BACK</button></td>
-      <td><button (click)="goToBookEdit(book)">EDIT</button></td>
-    </tr>
   </table>
+  <div class="book-dtl-btn"><button (click)="goBack(book)">Go to Listing</button>
+    <button (click)="goToBookEdit(book)">Edit</button></div>
 </div>

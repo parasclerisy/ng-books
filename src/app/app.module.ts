@@ -12,7 +12,9 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EventService } from "./services/event.service";
-
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material';
+import { MatInputModule, MatNativeDateModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,11 @@ import { EventService } from "./services/event.service";
     OrderModule,
     NoopAnimationsModule,
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatNativeDateModule
   ],
   providers: [BookService, EventService],
   bootstrap: [AppComponent]

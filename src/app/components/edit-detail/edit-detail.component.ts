@@ -3,8 +3,7 @@ import { BookService } from "../../services/book.service";
 import { ActivatedRoute, Router } from "@angular/router";
 import { Book } from "../../../model/book";
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 
 @Component({
@@ -31,15 +30,10 @@ export class EditDetailComponent implements OnInit {
 
   ngOnInit() {
     this.editForm = new FormGroup({
-      isbn: new FormControl(this.data.isbn, Validators.required),
-      title: new FormControl(this.data.title, Validators.required),
-      subtitle: new FormControl(this.data.subtitle, Validators.required),
+      name: new FormControl(this.data.name, Validators.required),
       author: new FormControl(this.data.author, Validators.required),
       published: new FormControl(this.data.published, Validators.required),
-      publisher: new FormControl(this.data.publisher, Validators.required),
       pages: new FormControl(this.data.pages, Validators.required),
-      description: new FormControl(this.data.description, Validators.required),
-      website: new FormControl(this.data.website, Validators.required)
     });
   }
 
