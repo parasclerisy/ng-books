@@ -2,13 +2,13 @@ import { Book } from "../model/book";
 
 export const Books: Book[] = [{
   "id": 1,
-  "name": "Eloquent JavaScript, Second Edition",
+  "name": "Eloquent JavaScript",
   "author": "Marijn Haverbeke",
   "published": "2014-12-14T00:00:00.000Z",
   "pages": 472,
 }, {
   "id": 2,
-  "name": "Learning JavaScript Design Patterns",
+  "name": "Learning JS Design",
   "author": "Addy Osmani",
   "published": "2012-07-01T00:00:00.000Z",
   "pages": 254,
@@ -20,7 +20,7 @@ export const Books: Book[] = [{
   "pages": 460,
 }, {
   "id": 4,
-  "name": "Programming JavaScript Applications",
+  "name": "JavaScript Applications",
   "author": "Eric Elliott",
   "published": "2014-07-01T00:00:00.000Z",
   "pages": 254,
@@ -44,7 +44,7 @@ export const Books: Book[] = [{
   "pages": 234,
 }, {
   "id": 8,
-  "name": "Designing Evolvable Web APIs with ASP.NET",
+  "name": "Web APIs with ASP.NET",
   "author": "Glenn Block, et al.",
   "published": "2014-04-07T00:00:00.000Z",
   "pages": 538,
@@ -56,7 +56,7 @@ export const Books: Book[] = [{
   "pages": 538,
 }, {
   "id": 10,
-  "name": "You Don't Know JS",
+  "name": "You Don't Know JS 2",
   "author": "Kyle Simpson, Cooper",
   "published": "2015-12-27T00:00:00.000Z",
   "pages": 278,
@@ -68,7 +68,7 @@ export const Books: Book[] = [{
   "pages": 234,
 }, {
   "id": 12,
-  "name": "Designing Evolvable Web APIs with PHP",
+  "name": "Designing Web APIs with PHP",
   "author": "John Snow",
   "published": "2014-04-07T00:00:00.000Z",
   "pages": 538,
